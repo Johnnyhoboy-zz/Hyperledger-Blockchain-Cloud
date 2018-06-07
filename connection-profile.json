@@ -20,13 +20,34 @@
                         "marbles_sample": {
                             "version": "3a30a0df1829",
                             "path": "ibm-bcs-ne547e02bd40948c3a9c1872139c2c2ff-marbles_sample-3a30a0df1829"
+                        },
+                        "perishable-network": {
+                            "version": "0.2.6-deploy.1",
+                            "path": "/tmp/businessnetwork11854-30481-1n1qp41.njuk"
                         }
                     }
                 }
             },
             "chaincodes": [
-                "marbles_sample:3a30a0df1829"
+                "marbles_sample:3a30a0df1829",
+                "perishable-network:0.2.6-deploy.1"
             ],
+            "x-members": [
+                "org1",
+                "org2"
+            ]
+        },
+        "test": {
+            "x-status": "membership_valid",
+            "orderers": [
+                "orderer"
+            ],
+            "peers": {
+                "org1-peer1": {
+                    "x-chaincode": {}
+                }
+            },
+            "chaincodes": [],
             "x-members": [
                 "org1",
                 "org2"
@@ -46,7 +67,12 @@
                 "pem": "-----BEGIN CERTIFICATE-----\nMIICaTCCAg+gAwIBAgIUVOSu2O6UNNAJIocoxh53DuD3KhowCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA1MzExMDAxMDBaFw0xOTA1MzExMDA2MDBa\nMDMxHDANBgNVBAsTBmNsaWVudDALBgNVBAsTBG9yZzExEzARBgNVBAMMCm9yZzFf\nYWRtaW4wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARHqYuQvopYp2IPVe7LcHRX\nmdHw18HSv5xAmpC4MzM21TVPOLRNRTx0itu/qQEszFlfhvOvP663/RFGYq2h9+Na\no4HEMIHBMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTm\nnGLzQGa1QpxS4aFfKOGFWPIZuzAfBgNVHSMEGDAWgBSu/H/9Hp0M60ulHzNVNfyr\njhHKOTBhBggqAwQFBgcIAQRVeyJhdHRycyI6eyJoZi5BZmZpbGlhdGlvbiI6Im9y\nZzEiLCJoZi5FbnJvbGxtZW50SUQiOiJvcmcxX2FkbWluIiwiaGYuVHlwZSI6ImNs\naWVudCJ9fTAKBggqhkjOPQQDAgNIADBFAiEAg+Rki7Df7xNtqOGUVXLAFpvO0B/6\nmwy3c57rRdEWzdICIBSKEcBjz9KVV1gjIc8gg8tW6/8DWYW2vs6v5fJTw4CQ\n-----END CERTIFICATE-----\n",
                 "x-name": "default"
             },
-            "x-uploadedSignedCerts": []
+            "x-uploadedSignedCerts": [
+                {
+                    "pem": "-----BEGIN CERTIFICATE-----\nMIIB8TCCAZigAwIBAgIUDMFqYjD4AebTzbdyFTrNeOSTuykwCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA2MDcxMzMzMDBaFw0xOTA2MDcxMzM4MDBa\nMCExDzANBgNVBAsTBmNsaWVudDEOMAwGA1UEAxMFYWRtaW4wWTATBgcqhkjOPQIB\nBggqhkjOPQMBBwNCAATptvgAM7E+hVpglq3BTRmw7GzQTx7U9my+vZfZz+VppSj8\nBEXFyrpCCyvHpdPalTKkkMIDS/583x2eBbufEqHto2AwXjAOBgNVHQ8BAf8EBAMC\nB4AwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUUz1rUGKqffcmcWpYFoPEnETZMXUw\nHwYDVR0jBBgwFoAUrvx//R6dDOtLpR8zVTX8q44RyjkwCgYIKoZIzj0EAwIDRwAw\nRAIgPzYzjlE2+a4Rc5fe42J1zJFu0OMLPEc/g2EuIIuObKYCICPahaJ8tQuqriBq\ng2kILhR9DzR8H877PQgOQX/26oHf\n-----END CERTIFICATE-----\n",
+                    "x-name": "cfa-1"
+                }
+            ]
         }
     },
     "orderers": {
@@ -82,6 +108,10 @@
                 "marbles_sample": {
                     "version": "3a30a0df1829",
                     "path": "ibm-bcs-ne547e02bd40948c3a9c1872139c2c2ff-marbles_sample-3a30a0df1829"
+                },
+                "perishable-network": {
+                    "version": "0.2.6-deploy.2",
+                    "path": "/tmp/businessnetwork11854-1391-xjii9t.2ibb8"
                 }
             }
         },
