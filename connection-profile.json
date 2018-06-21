@@ -1,11 +1,21 @@
 {
     "name": "John's Playground",
     "description": "Connection Profile for an IBM Blockchain Platform Network",
-    "x-networkId": "na124dfae9961441fb0b63e966ff2d218",
+    "x-networkId": "n5e118ca15ac7464f835dc34de3956009",
     "x-fabricVersion": "v1.1.0",
     "version": "1.0.3",
     "client": {
         "organization": "org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
+        },
         "x-organizationName": "Company A"
     },
     "channels": {
@@ -36,7 +46,7 @@
                 "org1-ca"
             ],
             "signedCert": {
-                "pem": "-----BEGIN CERTIFICATE-----\nMIICaTCCAg+gAwIBAgIUc2qQk2kCIZVgKElOJbG1OI/04hIwCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA2MTExMTU4MDBaFw0xOTA2MTExMjAzMDBa\nMDMxHDANBgNVBAsTBmNsaWVudDALBgNVBAsTBG9yZzExEzARBgNVBAMMCm9yZzFf\nYWRtaW4wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARzBYm4cYlMFa/fUlOAAq/w\ni6InPkpN6hyR/gbUGFMuSP5VD5EI/kyVVPB1TKHCH72ybUfNTwR4DLfqhPp6x+Xg\no4HEMIHBMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQ8\nqq02lcH3uxhqDvJOmG1F/tCOkzAfBgNVHSMEGDAWgBTFxRo7oM88WnVbMQ5ZehjF\nBpy1GjBhBggqAwQFBgcIAQRVeyJhdHRycyI6eyJoZi5BZmZpbGlhdGlvbiI6Im9y\nZzEiLCJoZi5FbnJvbGxtZW50SUQiOiJvcmcxX2FkbWluIiwiaGYuVHlwZSI6ImNs\naWVudCJ9fTAKBggqhkjOPQQDAgNIADBFAiEAzApUm8ixr2oj03sF0ksbFDk6wANe\nMUp0JYy/Uq9npd0CIF3h1DY4igz+CoE0nHqZZ5mg4M3Xkv3UGixs2Ybk8mMB\n-----END CERTIFICATE-----\n",
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICaDCCAg+gAwIBAgIURLkC+d0iMiC/unXMjYetOsV1LEUwCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA2MTUwMTMzMDBaFw0xOTA2MTUwMTM4MDBa\nMDMxHDANBgNVBAsTBmNsaWVudDALBgNVBAsTBG9yZzExEzARBgNVBAMMCm9yZzFf\nYWRtaW4wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARfBXiSxBeZPX0AW9v5RHWk\nLY+y3zMpNplcdIJ6ytSVqwkZ23ybQWU3BnYKtI1XHM7vSVZ3tFpZBql5R8HEVVgV\no4HEMIHBMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQU\n8QKTG/WRfus6VuX4b3/FMioBFzAfBgNVHSMEGDAWgBQvsvWf7fXiN2zMPDAh5Zp3\nJAsDLTBhBggqAwQFBgcIAQRVeyJhdHRycyI6eyJoZi5BZmZpbGlhdGlvbiI6Im9y\nZzEiLCJoZi5FbnJvbGxtZW50SUQiOiJvcmcxX2FkbWluIiwiaGYuVHlwZSI6ImNs\naWVudCJ9fTAKBggqhkjOPQQDAgNHADBEAiARkDTo68raJ+4EVqzuAyHay73nZVjj\nqPrao6KFwRRTCAIgH+J5SIj2kZwXw8brAUw5j4sKO+kDFRzrAgcQiWGIZvI=\n-----END CERTIFICATE-----\n",
                 "x-name": "default"
             },
             "x-uploadedSignedCerts": []
@@ -44,7 +54,7 @@
     },
     "orderers": {
         "orderer": {
-            "url": "grpcs://na124dfae9961441fb0b63e966ff2d218-orderer.us6.blockchain.ibm.com:31001",
+            "url": "grpcs://n5e118ca15ac7464f835dc34de3956009-orderer.us7.blockchain.ibm.com:31001",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -58,8 +68,8 @@
     },
     "peers": {
         "org1-peer1": {
-            "url": "grpcs://na124dfae9961441fb0b63e966ff2d218-org1-peer1.us6.blockchain.ibm.com:31002",
-            "eventUrl": "grpcs://na124dfae9961441fb0b63e966ff2d218-org1-peer1.us6.blockchain.ibm.com:31003",
+            "url": "grpcs://n5e118ca15ac7464f835dc34de3956009-org1-peer1.us7.blockchain.ibm.com:31002",
+            "eventUrl": "grpcs://n5e118ca15ac7464f835dc34de3956009-org1-peer1.us7.blockchain.ibm.com:31003",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -74,8 +84,8 @@
             "x-installed-chaincode": {}
         },
         "org2-peer1": {
-            "url": "grpcs://na124dfae9961441fb0b63e966ff2d218-org2-peer1.us6.blockchain.ibm.com:31002",
-            "eventUrl": "grpcs://na124dfae9961441fb0b63e966ff2d218-org2-peer1.us6.blockchain.ibm.com:31003",
+            "url": "grpcs://n5e118ca15ac7464f835dc34de3956009-org2-peer1.us7.blockchain.ibm.com:31002",
+            "eventUrl": "grpcs://n5e118ca15ac7464f835dc34de3956009-org2-peer1.us7.blockchain.ibm.com:31003",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -91,7 +101,7 @@
     },
     "certificateAuthorities": {
         "org1-ca": {
-            "url": "https://na124dfae9961441fb0b63e966ff2d218-org1-ca.us6.blockchain.ibm.com:31011",
+            "url": "https://n5e118ca15ac7464f835dc34de3956009-org1-ca.us7.blockchain.ibm.com:31011",
             "httpOptions": {
                 "verify": true
             },
@@ -101,7 +111,14 @@
             "registrar": [
                 {
                     "enrollId": "admin",
-                    "enrollSecret": "1c4ee246cf"
+                    "enrollSecret": "d9b022dc80",
+                    "x-affiliations": [
+                        "org1",
+                        "org1.department1",
+                        "org1.department2",
+                        "org2",
+                        "org2.department1"
+                    ]
                 }
             ],
             "caName": "org1CA",
