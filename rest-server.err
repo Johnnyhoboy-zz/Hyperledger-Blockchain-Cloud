@@ -1,0 +1,159 @@
+nohup: ignoring input
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
+Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
+Unhandled error for request GET /bootstrap.min.css.map: Error: Cannot GET /bootstrap.min.css.map
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderShipped: ValidationError: The `org_acme_shipping_perishable_OrderShipped` instance is not valid. Details: `tempReading` can't be blank (value: null); `locationReading` can't be blank (value: null).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_OrderShipped.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_OrderShipped.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_OrderShipped.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_OrderShipped.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_OrderShipped.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request POST /api/org.acme.shipping.perishable.TemperatureReading: ValidationException: Unexpected properties for type org.acme.shipping.perishable.TempReading: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+    at validateProperties (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:60:15)
+    at JSONPopulator.visitClassDeclaration (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:118:9)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:96:25)
+    at ConceptDeclaration.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at JSONPopulator.convertItem (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:194:30)
+    at JSONPopulator.visitField (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:149:27)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:100:25)
+    at Field.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at properties.forEach (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:124:51)
+    at Array.forEach (<anonymous>)
+    at JSONPopulator.visitClassDeclaration (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:120:20)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:96:25)
+    at TransactionDeclaration.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at Serializer.fromJSON (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer.js:189:26)
+    at ensureConnected.then (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-connector-composer/lib/businessnetworkconnector.js:634:43)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.TemperatureReading: ValidationException: Unexpected properties for type org.acme.shipping.perishable.TempReading: 0, 1, 2, 3, 4
+    at validateProperties (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:60:15)
+    at JSONPopulator.visitClassDeclaration (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:118:9)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:96:25)
+    at ConceptDeclaration.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at JSONPopulator.convertItem (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:194:30)
+    at JSONPopulator.visitField (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:149:27)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:100:25)
+    at Field.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at properties.forEach (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:124:51)
+    at Array.forEach (<anonymous>)
+    at JSONPopulator.visitClassDeclaration (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:120:20)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:96:25)
+    at TransactionDeclaration.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at Serializer.fromJSON (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer.js:189:26)
+    at ensureConnected.then (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-connector-composer/lib/businessnetworkconnector.js:634:43)
+    at <anonymous>
+Unhandled error for request GET /bootstrap.min.css.map: Error: Cannot GET /bootstrap.min.css.map
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /bootstrap.min.css.map: Error: Cannot GET /bootstrap.min.css.map
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
