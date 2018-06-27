@@ -17,14 +17,14 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="addTransactionModalLabel">Create Transaction</h4>
-          <p class="modal-intro">Enter the required values below.</p>
+          <p class="modal-intro">Setup the demo.</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
 
 
           
-
+	<!--
             
               <div class="form-group text-left">
                 <label for="transactionId">transactionId</label>
@@ -42,7 +42,7 @@
                   <input formControlName="timestamp" type="text" class="form-control">
                 
               </div>
-            
+            -->
           
 
         </div>
@@ -166,8 +166,8 @@
           </ul>
         </div>
       </div>
-      <button type="button" class="btn btn-primary invokeTransactionBtn" data-toggle="modal">Invoke</button>
-    </div>
+      <button (click)="resetForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTransactionModal">
+Invoke</button>    </div>
   </div>
 </div>
  

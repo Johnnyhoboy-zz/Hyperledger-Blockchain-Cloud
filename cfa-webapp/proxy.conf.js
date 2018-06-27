@@ -24,7 +24,7 @@ function getTarget() {
         const restServerURL = process.env.REST_SERVER_URL;
         return restServerURL;
     }
-    return 'http://localhost:8080';
+    return 'http://54.174.98.234:8080';
 }
 
 const target = getTarget();

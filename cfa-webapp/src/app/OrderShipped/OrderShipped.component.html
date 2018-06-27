@@ -54,7 +54,7 @@
               </div>
             
           
-
+	<!--
             
               <div class="form-group text-left">
                 <label for="transactionId">transactionId</label>
@@ -72,7 +72,7 @@
                   <input formControlName="timestamp" type="text" class="form-control">
                 
               </div>
-            
+            -->
           
 
         </div>
@@ -132,6 +132,7 @@
 
             </div>
           
+	<!--
             <div class="form-group text-left">
               <label for="transactionId">transactionId</label>
 
@@ -150,7 +151,7 @@
 
             </div>
           
-
+	-->
 
         </div>
         <div class="modal-footer">
@@ -242,8 +243,8 @@
           </ul>
         </div>
       </div>
-      <button type="button" class="btn btn-primary invokeTransactionBtn" data-toggle="modal">Invoke</button>
-    </div>
+      <button (click)="resetForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTransactionModal">
+Invoke</button>    </div>
   </div>
 </div>
  
