@@ -79,7 +79,7 @@
 
 .navbar-nav .active > a {
     background-color: #fff;
-    color: #DD0031 !important;
+    color: #DD0031 ;
 }
 
 .dropdown-menu {
@@ -87,6 +87,7 @@
     border: none;
     padding: 0px;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.10);
+    color: rgb(0, 0, 0) !important;
     max-height: 0;
     display: block;
     overflow: hidden;
@@ -106,7 +107,7 @@
 .dropdown-menu > li > a {
     padding: 6px 12px;
     font-size: 14px;
-    color: #343C41;
+    color: #343C41 !important;
     letter-spacing: 0.2px;
     line-height: 30px;
 }
