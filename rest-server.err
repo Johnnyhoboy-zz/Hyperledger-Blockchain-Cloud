@@ -55,16 +55,215 @@ Swagger: skipping unknown type "org.acme.shipping.perishable.Case".
 Swagger: skipping unknown type "org.acme.shipping.perishable.Business".
 Swagger: skipping unknown type "org.acme.shipping.perishable.Order".
 Swagger: skipping unknown type "org.acme.shipping.perishable.Contract".
-events.js:183
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE :::8080
-    at Object._errnoException (util.js:1022:11)
-    at _exceptionWithHostPort (util.js:1044:20)
-    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
-    at listenInCluster (net.js:1408:12)
-    at Server.listen (net.js:1492:7)
-    at module.exports.promise.then.then (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/cli.js:135:19)
+Unhandled error for request POST /api/org.acme.shipping.perishable.Case: ValidationError: The `org_acme_shipping_perishable_Case` instance is not valid. Details: `caseID` can't be blank (value: undefined); `fieldID` can't be blank (value: undefined); `type` can't be blank (value: undefined); `caseStatus` can't be blank (value: undefined).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_Case.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_Case.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_Case.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_Case.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_Case.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderDelivered: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: You have inputted a nonexistent order ID
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.Case: ValidationException: Unexpected properties for type org.acme.shipping.perishable.Case: class
+    at validateProperties (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:60:15)
+    at JSONPopulator.visitClassDeclaration (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:118:9)
+    at JSONPopulator.visit (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer/jsonpopulator.js:96:25)
+    at AssetDeclaration.accept (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/introspect/decorated.js:54:24)
+    at Serializer.fromJSON (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-common/lib/serializer.js:189:26)
+    at ensureConnected.then (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-connector-composer/lib/businessnetworkconnector.js:634:43)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderDelivered: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: You have inputted a nonexistent order ID
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.Order: ValidationError: The `org_acme_shipping_perishable_Order` instance is not valid. Details: `orderID` can't be blank (value: undefined); `quantity` can't be blank (value: undefined); `orderStatus` can't be blank (value: undefined).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_Order.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_Order.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_Order.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_Order.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_Order.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: ValidationError: The `org_acme_shipping_perishable_OrderPlaced` instance is not valid. Details: `orderID` can't be blank (value: undefined); `placed` can't be blank (value: undefined); `quantity` can't be blank (value: undefined); `pickup` can't be blank (value: undefined); `destination` can't be blank (value: undefined); `merchantID` can't be blank (value: undefined); `customerID` can't be blank (value: undefined); `shipperID` can't be blank (value: undefined).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_OrderPlaced.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_OrderPlaced.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_OrderPlaced.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: ValidationError: The `org_acme_shipping_perishable_OrderPlaced` instance is not valid. Details: `placed` can't be blank (value: undefined).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_OrderPlaced.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_OrderPlaced.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_OrderPlaced.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request GET /axis2/: Error: Cannot GET /axis2/
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: SyntaxError: Unexpected token "
+    at parse (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/json.js:83:15)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:262:16)
+    at done (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:307:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: ValidationError: The `org_acme_shipping_perishable_OrderPlaced` instance is not valid. Details: `placed` can't be blank (value: undefined).
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:398:12
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:578:11)
+    at org_acme_shipping_perishable_OrderPlaced.next (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:93:12)
+    at org_acme_shipping_perishable_OrderPlaced.<anonymous> (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:575:23)
+    at org_acme_shipping_perishable_OrderPlaced.trigger (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/hooks.js:83:12)
+    at org_acme_shipping_perishable_OrderPlaced.Validatable.isValid (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/validations.js:541:8)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/dao.js:394:9
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at doNotify (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:155:49)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:178:5)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+    at Function.ObserverMixin.notifyObserversOf (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:153:8)
+    at Function.ObserverMixin._notifyBaseObservers (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/loopback-datasource-juggler/lib/observer.js:176:15)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: SyntaxError: Unexpected token "
+    at parse (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/json.js:83:15)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:262:16)
+    at done (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:307:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: SyntaxError: Unexpected token "
+    at parse (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/json.js:83:15)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:262:16)
+    at done (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/raw-body/index.js:307:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
+Unhandled error for request POST /api/org.acme.shipping.perishable.OrderPlaced: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: 2 UNKNOWN: error executing chaincode: transaction returned with failure: Not enough cases available to fill order
+    at _initializeChannel.then.then.then.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:980:34)
+    at <anonymous>
